@@ -23,6 +23,8 @@ description: >
 
 ## BƯỚC 0 – RENDER BẢN VẼ
 
+**Thư mục output:** Tạo 1 thư mục mới cùng tên với file input (PDF/CAD, bỏ phần mở rộng), ví dụ input `Pôdorys_1NP.pdf` → thư mục `Pôdorys_1NP/`. Mọi file output (Excel, PDF overlay, ảnh debug) đều lưu vào thư mục này.
+
 ```bash
 pdftoppm -jpeg -r 150 -f 1 -l 1 input.pdf /tmp/page150  # tối thiểu
 pdftoppm -jpeg -r 250 -f 1 -l 1 input.pdf /tmp/page250  # cho legend
@@ -204,10 +206,10 @@ Mọi file output (Excel, PDF, sơ đồ) dùng **tiếng Slovak**.
 | Ghi chú | Poznámka |
 | Tường ngoài / Vách ngăn | Obvodová stena / Priečka |
 
-**Tên file output:**
+**Tên file output** (trong thư mục cùng tên với file input — xem BƯỚC 0):
 ```
-Vykaz_Tehloveho_Muriva_1NP.xlsx
-Vykaz_Tehloveho_Muriva_Schema_1NP.pdf
+<ten_file_input>/Vykaz_Tehloveho_Muriva_1NP.xlsx
+<ten_file_input>/Vykaz_Tehloveho_Muriva_Schema_1NP.pdf
 ```
 
 ---
